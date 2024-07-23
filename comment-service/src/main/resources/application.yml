@@ -1,0 +1,32 @@
+
+
+#spring.application.name=comment-service
+
+server:
+  port: 8403
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/comment-service
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: COMMENT-SERVICE
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka

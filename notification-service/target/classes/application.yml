@@ -1,0 +1,29 @@
+#spring.application.name=notification-service
+
+spring:
+  kafka:
+    template:
+      default-topic: topic
+    consumer:
+      group-id: notificationId
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring:
+          json:
+            type:
+              mapping: event:com.example.notificationservice.LikeEvent
+    bootstrap-servers: localhost:9092
+  application:
+    name: NOTIFICATION-SERVICE
+server:
+  port: '8405'
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka

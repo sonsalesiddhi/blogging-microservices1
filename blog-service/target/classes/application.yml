@@ -1,0 +1,44 @@
+#spring.application.name=blog-service
+
+server:
+  port: 8402
+
+
+spring:
+  application:
+    name: BLOG-SERVICE
+  kafka:
+    bootstrap-servers: localhost:9092
+    template:
+      default-topic: topic
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring:
+          json:
+            type:
+              mapping: event:com.example.blogservice.event.LikeEvent
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: blog-service
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
