@@ -13,6 +13,7 @@ import com.example.commentservice.controller.repository.CommentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -29,7 +30,13 @@ public class CommentService {
     @Autowired
     private BlogService blogService;
 
+    @Autowired
+    private CommentServiceUtils commentServiceUtils;
+
     public CommentResponse addComment(CommentRequest commentRequest) {
+        Instant createdDate = commentServiceUtils.getCreatedDate();
+
+
         UserResponse userResponse = userService.getUserById(commentRequest.getUserId());
         if(Objects.isNull(userResponse)){
             throw new UserNotFoundException("user with"+commentRequest.getUserId()+"not found");
@@ -44,7 +51,7 @@ public class CommentService {
                 .blogId(commentRequest.getBlogId())
                 .userId(commentRequest.getUserId())
                 .content(commentRequest.getContent())
-                .createdAt(commentRequest.getCreatedAt())
+                .createdAt(createdDate)
                 .build();
 
         Comment savedComment = commentRepository.save(comment);

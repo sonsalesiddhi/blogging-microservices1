@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="973ba2c7-d94c-43f1-a88b-82daef96a3c9" name="Changes" comment="" />
+    <list default="true" id="973ba2c7-d94c-43f1-a88b-82daef96a3c9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/comment-service/src/main/java/com/example/commentservice/service/CommentServiceUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-service/src/test/java/com/example/commentservice/controller/CommentControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-service/src/test/java/com/example/commentservice/service/CommentServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-service/src/test/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-service/src/test/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-service/src/main/java/com/example/commentservice/model/CommentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/src/main/java/com/example/commentservice/model/CommentRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-service/src/main/java/com/example/commentservice/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-service/src/main/java/com/example/commentservice/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/like-service/src/test/java/com/example/likeservice/LikeServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/like-service/src/test/java/com/example/likeservice/LikeServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/like-service/src/test/java/com/example/likeservice/controller/LikeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/like-service/src/test/java/com/example/likeservice/controller/LikeControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/like-service/src/test/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/like-service/src/test/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/like-service/target/test-classes/com/example/likeservice/LikeServiceApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/like-service/target/test-classes/com/example/likeservice/LikeServiceApplicationTests.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +31,9 @@
         <option value="JUnit5 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -38,6 +54,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2jKUFr9hHttjKkn8OCeNsEX3rWc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -83,10 +100,13 @@
       <recent name="C:\Users\HP\IdeaProjects\demo\blogging-microservices\like-service\src\test" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.commentservice.controller" />
+      <recent name="com.example.commentservice.service" />
       <recent name="com.example.likeservice.controller" />
       <recent name="com.example.blogservice.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.commentservice.service" />
       <recent name="com.example.blogservice.externel.model" />
     </key>
   </component>
@@ -102,81 +122,81 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BlogServiceTest">
-    <configuration name="BlogServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="blog-service" />
+  <component name="RunManager" selected="JUnit.CommentServiceTest.getCommentByBlogId">
+    <configuration name="CommentServiceTest.addComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="comment-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.blogservice.service.*" />
+          <option name="PATTERN" value="com.example.commentservice.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.blogservice.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.blogservice.service.BlogServiceTest" />
+      <option name="PACKAGE_NAME" value="com.example.commentservice.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.commentservice.service.CommentServiceTest" />
+      <option name="METHOD_NAME" value="addComment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommentServiceTest.getCommentByBlogId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="comment-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.commentservice.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.commentservice.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.commentservice.service.CommentServiceTest" />
+      <option name="METHOD_NAME" value="getCommentByBlogId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LikeControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="like-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.likeservice.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.likeservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.likeservice.controller.LikeControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BlogServiceTest.createBlog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="blog-service" />
+    <configuration name="LikeControllerTest.getLikeCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="like-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.blogservice.service.*" />
+          <option name="PATTERN" value="com.example.likeservice.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.blogservice.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.blogservice.service.BlogServiceTest" />
-      <option name="METHOD_NAME" value="createBlog" />
+      <option name="PACKAGE_NAME" value="com.example.likeservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.likeservice.controller.LikeControllerTest" />
+      <option name="METHOD_NAME" value="getLikeCount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BlogServiceTest.getAllBlogs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="blog-service" />
+    <configuration name="LikeControllerTest.likeBlog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="like-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.blogservice.service.*" />
+          <option name="PATTERN" value="com.example.likeservice.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.blogservice.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.blogservice.service.BlogServiceTest" />
-      <option name="METHOD_NAME" value="getAllBlogs" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BlogServiceTest.getBlogById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="blog-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.blogservice.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.blogservice.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.blogservice.service.BlogServiceTest" />
-      <option name="METHOD_NAME" value="getBlogById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BlogServiceTest.getBlogByUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="blog-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.blogservice.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.blogservice.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.blogservice.service.BlogServiceTest" />
-      <option name="METHOD_NAME" value="getBlogByUserId" />
+      <option name="PACKAGE_NAME" value="com.example.likeservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.likeservice.controller.LikeControllerTest" />
+      <option name="METHOD_NAME" value="likeBlog" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -247,11 +267,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BlogServiceTest" />
-        <item itemvalue="JUnit.BlogServiceTest.getAllBlogs" />
-        <item itemvalue="JUnit.BlogServiceTest.getBlogByUserId" />
-        <item itemvalue="JUnit.BlogServiceTest.createBlog" />
-        <item itemvalue="JUnit.BlogServiceTest.getBlogById" />
+        <item itemvalue="JUnit.CommentServiceTest.getCommentByBlogId" />
+        <item itemvalue="JUnit.CommentServiceTest.addComment" />
+        <item itemvalue="JUnit.LikeControllerTest.likeBlog" />
+        <item itemvalue="JUnit.LikeControllerTest.getLikeCount" />
+        <item itemvalue="JUnit.LikeControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -271,12 +291,25 @@
       <workItem from="1721391648430" duration="16228000" />
       <workItem from="1721650031397" duration="9262000" />
       <workItem from="1721734501413" duration="11560000" />
-      <workItem from="1721747569439" duration="5071000" />
+      <workItem from="1721747569439" duration="5736000" />
+      <workItem from="1721821340601" duration="9425000" />
+      <workItem from="1721832068057" duration="7759000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

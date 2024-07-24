@@ -15,6 +15,6 @@ public class CommentRequest {
     private String blogId;
     private Integer userId;
     private String content;
-    private Instant createdAt;
+
 
 }
